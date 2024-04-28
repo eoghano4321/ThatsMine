@@ -1,0 +1,11 @@
+res://test.tscn
+res://OilPocket.gdshader
+res://Tiles/new_tile_set.tres
+res://new_shader.gdshader
+res://water.gdshader
+res://oil.gdshader
+res://OilPocket.gd
+res://tilemaptest.gd
+res://oil_pocket.tscn
+res://dowser.tscn
+res://dowser.gd

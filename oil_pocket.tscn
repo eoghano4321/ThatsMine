@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://xrngmrxmbrtu"]
+
+[ext_resource type="Script" path="res://OilPocket.gd" id="1_s5n31"]
+
+[node name="OilPocket" type="Node2D"]
+script = ExtResource("1_s5n31")
+
+[node name="Pocket" type="Area2D" parent="." groups=["pocket"]]
+priority = 3
+
+[node name="PocketMesh" type="Polygon2D" parent="Pocket"]
+
+[node name="PocketCol" type="CollisionPolygon2D" parent="Pocket"]
+z_index = 2
+
+[node name="InnerRing" type="Area2D" parent="." groups=["inner_ring"]]
+priority = 2
+
+[node name="InnerDowseRing" type="CollisionShape2D" parent="InnerRing"]
+z_index = 1
+
+[node name="OuterRing" type="Area2D" parent="." groups=["outer_ring"]]
+
+[node name="OuterDowseRing" type="CollisionShape2D" parent="OuterRing"]
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

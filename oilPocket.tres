@@ -1,0 +1,10 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://ci8qqn47lsupt"]
+
+[ext_resource type="Shader" path="res://OilPocket.gdshader" id="1_8rcmc"]
+
+[resource]
+shader = ExtResource("1_8rcmc")
+shader_parameter/canvas_size = Vector2(1200, 648)
+shader_parameter/fullness = 0.591
+shader_parameter/color1 = Color(0, 0.00162287, 0.0491574, 1)
+shader_parameter/color2 = Color(0.283715, 0.0951225, 0.00779903, 1)
